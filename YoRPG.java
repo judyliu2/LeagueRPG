@@ -1,7 +1,7 @@
 //Team League RPG -- Shakil Rafi, Henry Zheng, Judy Liu
 //APCS1 pd3
-//HW32 -- Ye Olde Role Playing Game, Expanded
-//2016-11-18
+//HW33 -- Ye Olde Role Playing Game, Unchained
+//2016-11-22
 
 /*=============================================
   class YoRPG -- Driver file for Ye Olde Role Playing Game.

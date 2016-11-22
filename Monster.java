@@ -1,9 +1,25 @@
 //Team League RPG -- Shakil Rafi, Henry Zheng, Judy Liu
 //APCS1 pd3
-//HW31 -- Ye Olde Role Playing Game, improved
-//2016-11-16
+//HW33 -- Ye Olde Role Playing Game, Unchained
+//2016-11-22
 
 public class Monster extends Character {
+
+    public  void normalize(){
+	strength = orig_strength;
+	defense = orig_strength;
+    }
+
+    public void specialize(){
+	strength += 1;
+	defense -= 1;
+    }
+
+    public String about(){
+	String retstr = "";
+	retstr += "\n:  Monster: \n \tHP: 150, Strength: 20-65, Defense: 20, Attack Rating: 1";
+	return retstr;
+    }
 
     /*
       Default constructor

@@ -1,7 +1,7 @@
 //Team League RPG -- Shakil Rafi, Henry Zheng, Judy Liu
 //APCS1 pd3
-//HW32 -- Ye Olde Role Playing Game, Expanded
-//2016-11-18
+//HW33 -- Ye Olde Role Playing Game, Unchained
+//2016-11-22
 
 public class Rogue extends Character {
 
@@ -27,6 +27,22 @@ public class Rogue extends Character {
     public Rogue( String n ) {
 	this();
 	name = n;
+    }
+
+    public void normalize(){
+	strength = orig_strength;
+	defense = orig_strength;
+    }
+
+    public void specialize(){
+	strength += 3;
+	defense -= 3;
+    }
+
+    public  String about(){
+	String retstr = "";
+	retstr += "\n2:  Rogue: \n \tHP: 110, Strength: 80, Defense: 30, Attack Rating: 0.4";
+	return retstr;
     }
 
 }//end class

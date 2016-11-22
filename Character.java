@@ -1,9 +1,9 @@
 //Team League RPG -- Shakil Rafi, Henry Zheng, Judy Liu
 //APCS1 pd3
-//HW32 -- Ye Olde Role Playing Game, Expanded
-//2016-11-18
+//HW33 -- Ye Olde Role Playing Game, Unchained
+//2016-11-22
 
-public class Character {
+public abstract class Character {
     
     protected int hp, strength, defense;
     protected double atkRating;
@@ -32,29 +32,14 @@ public class Character {
     }
 
     //increment strength and decrement defense for next attack
-    public void specialize() {
-	strength += 1;
-	defense -= 1;
-    }
+    public abstract void specialize();
 
     //reset strength and defense to default values
-    public void normalize() {
-	strength = orig_strength;
-	defense = orig_defense;
-    }
+    public abstract void normalize();
 
     public String getName() {
 	return name;
     }
 
-    public static String about(){
-	String retstr = "";
-	retstr += "\n0: Warrior: 125 hp, 100 strength, 40 defense, 0.4 atkRating";
-	retstr += "\n1: Mage: 100 hp, 80 strength, 30 defense, 0.5 atkRating";
-	retstr += "\n2: Rogue: 110 hp, 80 strength, 30 defense, 0.4 atkRating";
-	retstr += "\n3: Tank: 150 hp, 70 strength, 50 defense, 0.4 atkRating";
-	retstr += "\n4: Marksman: 80 hp, 110 strength, 30 defense, 0.6 atkRating";
-	retstr += "\nMonster: 150 hp, 20-65 strength, 20 defense, atkRating: 1";
-	return retstr;
-    }
+    public abstract String about();
 }
