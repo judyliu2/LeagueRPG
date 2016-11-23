@@ -1,6 +1,6 @@
 //Team League RPG -- Shakil Rafi, Henry Zheng, Judy Liu
 //APCS1 pd3
-//HW32 -- Ye Olde Role Playing Game, Unchained
+//HW34 -- Ye Olde Role Playing Game, Unchained
 //2016-11-22
 
 public class Warrior extends Character {

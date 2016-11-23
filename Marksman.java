@@ -1,6 +1,6 @@
 //Team League RPG -- Shakil Rafi, Henry Zheng, Judy Liu
 //APCS1 pd3
-//HW33 -- Ye Olde Role Playing Game, Unchained
+//HW34 -- Ye Olde Role Playing Game, Unchained
 //2016-11-22
 
 
@@ -42,7 +42,7 @@ public class Marksman extends Character {
 
     public  String about(){
 	String retstr = "";
-	retstr += "\n4:  Marksman: \n \tHP: 80, Strength: 110, Defense: 30, Attack Rating: 0.6";
+	retstr += "\n4: Marksman: \n \tHP: 80, Strength: 110, Defense: 30, Attack Rating: 0.6";
 	return retstr;
     }
     

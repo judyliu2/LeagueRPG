@@ -1,6 +1,6 @@
 //Team League RPG -- Shakil Rafi, Henry Zheng, Judy Liu
 //APCS1 pd3
-//HW33 -- Ye Olde Role Playing Game, Unchained
+//HW34 -- Ye Olde Role Playing Game, Unchained
 //2016-11-22
 
 /*=============================================
@@ -21,6 +21,13 @@ public class YoRPG
 
     //each round, a Warrior and a Monster will be instantiated...
     private Character pat;   //Is it man or woman?
+    private Character pat0;
+    private Character pat1;
+    private Character pat2;
+    private Character pat3;
+    private Character pat4;
+    private Character pat5;
+    
     private Monster smaug; //Friendly generic monster name?
 
     private int moveCount;
@@ -72,10 +79,21 @@ public class YoRPG
 	    difficulty = 1; //in case a non-int was passed
 	}
 
-	pat = new Character();
+	pat0 = new Warrior();
+	pat1 = new Mage();
+	pat2 = new Rogue();
+	pat3 = new Tank();
+	pat4 = new Marksman();
+	pat5 = new Monster();
 
 	s = "Choose thine class:";
-	s += pat.about();
+	s += pat0.about();
+	s += pat1.about();
+	s += pat2.about();
+	s += pat3.about();
+	s += pat4.about();
+	s += pat5.about();
+	
 	System.out.println(s);
 
 	int patClass = 0;
