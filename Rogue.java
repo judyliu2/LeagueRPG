@@ -5,12 +5,14 @@
 
 public class Rogue extends Character {
 
+    private int mana = 100; 
     /*=============================================
       default constructor
       pre:  instance vars are declared
       post: initializes instance vars.
       =============================================*/
     public Rogue() {
+	
 	hp = 110;
 	orig_strength = 80;
 	orig_defense = 30;
@@ -34,9 +36,18 @@ public class Rogue extends Character {
 	defense = orig_strength;
     }
 
-    public void specialize(){
-	strength += 3;
+    //A rogue uses specialize it has enough mana, else it regular attacks
+    public int specialize(Character C){
 	defense -= 3;
+	if (mana>0){
+	    hp +=2;
+	    strength += 6;
+	    mana -= 30;
+	    return attack(c);
+	}
+	else{
+	   return attack(c);
+	}
     }
 
     public  String about(){
