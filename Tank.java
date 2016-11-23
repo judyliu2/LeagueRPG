@@ -31,17 +31,21 @@ public class Tank extends Character {
 
     public  void normalize(){
 	strength = orig_strength;
-	defense = orig_strength;
+	defense = orig_defense;
+	atkRating = 0.3;
     }
 
-    public void specialize(){
-	strength +=3;
-	defense -= 5;
+    //Special attack: hit with massive power, then lose defense
+    public int specialize(Character c) {
+	strength += 10;
+	atkRating += 0.1;
+	defense -= 10;
+	return attack(c);
     }
 
     public String about(){
 	String retstr = "";
-	retstr += "\n3: Tank: \n \tHP: 150, Strength: 70, Defense: 50, Attack Rating: 0.3";
+	retstr += "\n3: Tank: The mighty tank will crush enemies without letting anything penetrate its armor\n \tHP: 150, Strength: 70, Defense: 50, Attack Rating: 0.3";
 	return retstr;
     }
 }

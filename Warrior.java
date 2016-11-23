@@ -32,11 +32,16 @@ public class Warrior extends Character {
     public void normalize(){
 	strength = orig_strength;
 	defense = orig_strength;
+	System.out.println("Reset strength to " + orig_strngth + " and defense to " + orig_defense);
     }
 
-    public void specialize(){
-	strength += 2;
-	defense -= 3;
+    //Special attack: one massive attack, then lose stats
+    public int specialize(Character c){
+	strength += 20;
+	int dmg = attack(c);
+	strength -= 25;
+	defense -= 5;
+	return dmg;
     }
 
     public String about(){
