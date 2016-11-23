@@ -31,10 +31,10 @@ public abstract class Character {
 	return dmg;
     }
 
-    //increment strength and decrement defense for next attack
-    public abstract void specialize();
+    //player class specific special attack
+    public abstract int specialize(Character c);
 
-    //reset strength and defense to default values
+    //resets player class specific variables to default values
     public abstract void normalize();
 
     public String getName() {

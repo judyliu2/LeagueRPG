@@ -4,6 +4,8 @@
 //2016-11-22
 
 public class Mage extends Character {
+    
+    int mana;
 
     /*=============================================
       default constructor
@@ -16,6 +18,7 @@ public class Mage extends Character {
 	orig_defense = 30;
 	atkRating = .4;
 	normalize();
+	mana = 100;
     }
 
 
@@ -29,14 +32,24 @@ public class Mage extends Character {
 	name = n;
     }
 
-    public  void normalize(){
-	strength = orig_strength;
-	defense = orig_strength;
+    public void normalize(){
+        if (Math.random() > .9){
+	    mana = 100;
+	}
+	System.out.println(mana);
     }
 
-    public void specialize(){
-	strength +=2;
-	defense -= 2;
+    public int specialize(Character c){
+	int dmg = 0;
+        if (mana >= 25){//if there is at least 25 mana
+	    dmg += attack(c);
+	    dmg += c.lowerHP(5);
+	    mana -= 25;
+	}
+	else{//else just use regular attack
+	    dmg += attack(c);
+	}
+	return dmg;
     }
 
     public String about(){
