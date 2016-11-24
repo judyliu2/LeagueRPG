@@ -5,32 +5,43 @@
 
 public class Monster extends Character {
 
-    public  void normalize(){
-	strength = orig_strength;
-	defense = orig_strength;
-    }
-
-    public void specialize(){
-	strength += 1;
-	defense -= 1;
-    }
-
-    public String about(){
-	String retstr = "";
-	retstr += "\nStats of Monster: \n \tHP: 150, Strength: 20-65, Defense: 20, Attack Rating: 1";
-	return retstr;
-    }
-
     /*
       Default constructor
       initializes all values
      */
     public Monster() {
-	hp = 150;
+	hp = (int)(Math.random() * 100) + 80;
 	orig_defense = 20;
 	atkRating = 1;
 	orig_strength = (int) (Math.random()*45) + 20;
 	normalize();
     }
+
+    
+    public  void normalize(){
+	strength = orig_strength;
+	defense = orig_strength;
+    }
+
+    public int specialize(Character c){
+	if ( Math.random() > .7 ){
+	    strength += 5;
+	    defense += 2;
+	}
+	
+	else {
+	strength += 1;
+	defense -= 1;
+	}
+
+	return attack(c);
+    }
+
+    public String about(){
+	String retstr = "";
+	retstr += "\nStats of Monster: \n \tHP: 80-179, Strength: 20-65, Defense: 20, Attack Rating: 1";
+	return retstr;
+    }
+
     
 }
