@@ -10,10 +10,10 @@ public class Monster extends Character {
       initializes all values
      */
     public Monster() {
-	hp = (int)(Math.random() * 100) + 80;
+	hp = (int)(Math.random() * 20) + 80;
 	orig_defense = 20;
 	atkRating = 1;
-	orig_strength = (int) (Math.random()*45) + 20;
+	orig_strength = (int) (Math.random()*5) + 20;
 	normalize();
     }
 
