@@ -45,7 +45,7 @@ public class Tank extends Character {
 
     public String about(){
 	String retstr = "";
-	retstr += "\n3: Tank: The mighty tank will crush enemies without letting anything penetrate its armor\n \tHP: 150, Strength: 70, Defense: 50, Attack Rating: 0.3";
+	retstr += "\n3: Tank: \n \tHP: 150, Strength: 70, Defense: 50, Attack Rating: 0.3";
 	return retstr;
     }
 }
