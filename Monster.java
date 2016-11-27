@@ -13,7 +13,7 @@ public class Monster extends Character {
 	hp = (int)(Math.random() * 20) + 80;
 	orig_defense = 20;
 	atkRating = 1;
-	orig_strength = (int) (Math.random()*3) + 20;
+	orig_strength = (int) (Math.random()*40) + 20;
 	normalize();
     }
 
@@ -25,13 +25,11 @@ public class Monster extends Character {
 
     public int specialize(Character c){
 	if ( Math.random() > .7 ){
-	    strength += 5;
+	    strength += 4;
 	    defense += 2;
-	}
-	
-	else {
-	strength += 1;
-	defense -= 1;
+	} else {
+	    strength -= 1;
+	    defense -= 1;
 	}
 
 	return attack(c);
