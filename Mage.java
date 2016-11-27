@@ -14,7 +14,7 @@ public class Mage extends Character {
       =============================================*/
     public Mage() {
 	hp = 100;
-	orig_strength = 80;
+	orig_strength = 90;
 	orig_defense = 30;
 	atkRating = .4;
 	normalize();
@@ -36,18 +36,17 @@ public class Mage extends Character {
         if (Math.random() > .9){
 	    mana = 100;
 	}
-	System.out.println(mana);
+	defense = orig_defense;
+	strength = orig_strength;
     }
 
     public int specialize(Character c){
 	int dmg = 0;
+	dmg += attack(c);
         if (mana >= 25){//if there is at least 25 mana
-	    dmg += attack(c);
-	    dmg += c.lowerHP(5);
+	    c.lowerHP(25);
+	    dmg += 25;
 	    mana -= 25;
-	}
-	else{//else just use regular attack
-	    dmg += attack(c);
 	}
 	return dmg;
     }
