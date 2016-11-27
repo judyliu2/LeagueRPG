@@ -159,7 +159,7 @@ public class YoRPG
 		catch ( IOException e ) { }
 
 		if ( i == 2 )
-		    pat.specialize();
+		    pat.specialize(smaug);
 		else
 		    pat.normalize();
 
