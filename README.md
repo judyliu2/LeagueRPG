@@ -6,6 +6,10 @@ An RPG set in the terminal made by Team LeagueRPG -- Judy Liu, Shakil Rafi, Henr
 2. Specialize returns an integer and attacks an opposing character.
 3. Some subclasses of Characters have new instance variables.
   
+## Code Restructurings:
+1. Choose class in the same manner as difficulty right after choosing difficulty.
+2. Specialize calls attack rather than the driver calling attack separately
+  
 ## How to play this game
 1. Open up your terminal.
 2. Type in ```javac YoRPG.java```
