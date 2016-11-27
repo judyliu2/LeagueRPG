@@ -34,7 +34,7 @@ public class Rogue extends Character {
 
     public void normalize(){
 	strength = orig_strength;
-	defense = orig_strength;
+	defense = orig_defense;
 	energy += 5;
     }
 
