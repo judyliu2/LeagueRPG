@@ -37,7 +37,7 @@ public class Marksman extends Character {
 
     public int specialize(Character c){
 	int dmg = 0;
-        if (Math.random() > .5){
+        if (Math.random() > .3){
 	    dmg += attack(c);
 	    dmg += attack(c);
 	}
