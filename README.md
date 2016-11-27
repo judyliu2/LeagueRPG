@@ -3,7 +3,7 @@ An RPG set in the terminal made by Team LeagueRPG -- Judy Liu, Shakil Rafi, Henr
 
 ## Feature Additions: 
 1. Subclasses of Character have variations in specialize and normalize methods. 
-2. Specialize returns and integer and attacks an opposing character.
+2. Specialize returns an integer and attacks an opposing character.
 3. Some subclasses of Characters have new instance variables.
   
 ## How to play this game
