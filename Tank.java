@@ -30,6 +30,7 @@ public class Tank extends Character {
     }
 
     public void normalize(){
+	orig_strength += 5;
 	strength = orig_strength;
 	defense = orig_defense;
     }
