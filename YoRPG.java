@@ -165,10 +165,11 @@ public class YoRPG
 		    d1 = pat.attack( smaug );
 		}
 
-		d2 = smaug.attack( pat );
-
 		if (Math.random() > .75){
 		    d2 = smaug.specialize( pat );
+		} else {
+		    smaug.normalize();
+		    d2 = smaug.attack( pat );
 		}
 
 		
