@@ -1,7 +1,7 @@
 //Team League RPG -- Shakil Rafi, Henry Zheng, Judy Liu
 //APCS1 pd3
-//HW34 -- Ye Olde Role Playing Game, Unchained
-//2016-11-22
+//HW35 -- Ye Olde Role Playing Game, Realized
+//2016-11-26
 
 public class Monster extends Character {
 
