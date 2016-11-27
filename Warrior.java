@@ -38,7 +38,7 @@ public class Warrior extends Character {
     public int specialize(Character c){
 	strength += 20;
 	int dmg = attack(c);
-	strength -= 20;
+	strength -= 18;
 	defense -= 5;
 	return dmg;
     }
