@@ -30,7 +30,10 @@ public class Marksman extends Character {
 	name = n;
     }
 
-    public abstract void normalize();
+    public void normalize(){
+	strength = orig_strength;
+	defense = orig_defense;
+    }
 
     public int specialize(Character c){
 	int dmg = 0;
