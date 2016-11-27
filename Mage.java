@@ -37,6 +37,7 @@ public class Mage extends Character {
 	    mana = 100;
 	}
 	defense = orig_defense;
+	orig_strength += 10;
 	strength = orig_strength;
     }
 
