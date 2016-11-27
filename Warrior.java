@@ -13,7 +13,7 @@ public class Warrior extends Character {
     public Warrior() {
 	hp = 125;
 	orig_strength = 100;
-	orig_defense = 40;
+	orig_defense = 35;
 	atkRating = .4;
 	normalize(); //sets strength and defense
     }
@@ -38,7 +38,7 @@ public class Warrior extends Character {
     public int specialize(Character c){
 	strength += 20;
 	int dmg = attack(c);
-	strength -= 25;
+	strength -= 20;
 	defense -= 5;
 	return dmg;
     }
