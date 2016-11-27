@@ -26,7 +26,7 @@ public abstract class Character {
 
     public int attack(Character c) {
 	int dmg = (int) (strength * atkRating) - c.getDefense();
-	if (dmg < 0) dmg = 0;
+	if (dmg < 0) dmg = 10;
 	c.lowerHP(dmg);
 	return dmg;
     }

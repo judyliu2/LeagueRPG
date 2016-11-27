@@ -29,17 +29,15 @@ public class Tank extends Character {
 	name = n;
     }
 
-    public  void normalize(){
+    public void normalize(){
 	strength = orig_strength;
 	defense = orig_defense;
-	atkRating = 0.3;
     }
 
     //Special attack: hit with massive power, then lose defense
     public int specialize(Character c) {
-	strength += 10;
-	atkRating += 0.1;
-	defense -= 10;
+	defense -= 3;
+	atkRating += .1;
 	return attack(c);
     }
 

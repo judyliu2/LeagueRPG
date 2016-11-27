@@ -38,7 +38,7 @@ public class Rogue extends Character {
 	energy += 5;
     }
 
-    //A rogue uses specialize it has enough mana, else it regular attacks
+    //A rogue uses specialize it has enough energy, else it regular attacks
     public int specialize(Character c){
 
 	if (defense > 3){
@@ -47,7 +47,7 @@ public class Rogue extends Character {
 	
 	if ( energy > 30 ){
 	    hp +=2 ;
-	    strength += 6;
+	    strength += 50;
 	    energy -= 30;
 	}
        
