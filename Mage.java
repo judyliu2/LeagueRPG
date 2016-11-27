@@ -54,7 +54,7 @@ public class Mage extends Character {
 
     public String about(){
 	String retstr = "";
-	retstr += "\n1: Mage: \n \tHP: 100, Strength: 80, Defense: 30, Attack Rating: 0.5";
+	retstr += "\n1: Mage: \n \tHP: 100, Strength: 80, Defense: 30, Attack Rating: 0.5, Mana: 100";
 	return retstr;
     }
 
