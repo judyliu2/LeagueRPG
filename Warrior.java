@@ -45,7 +45,7 @@ public class Warrior extends Character {
 
     public String about(){
 	String retstr = "";
-	retstr += "\n0:  Warrior: \n \tHP: 125, Strength: 100, Defense: 40, Attack Rating: 0.4";
+	retstr += "\n0:  Warrior: \n \tHP: 125, Strength: 100, Defense: 35, Attack Rating: 0.4";
 	return retstr;
     }
 

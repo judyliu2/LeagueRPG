@@ -37,7 +37,7 @@ public class Monster extends Character {
 
     public String about(){
 	String retstr = "";
-	retstr += "\nStats of Monster: \n \tHP: 80-179, Strength: 20-28, Defense: 20, Attack Rating: 2";
+	retstr += "\nStats of Monster: \n \tHP: 80-100, Strength: 20-30, Defense: 20, Attack Rating: 2";
 	return retstr;
     }
 
