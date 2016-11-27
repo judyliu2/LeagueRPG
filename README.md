@@ -1,5 +1,12 @@
 # LeagueRPG
 An RPG set in the terminal
+
+## Feature Additions: 
+ ⋅⋅1. Subclasses of Character have variations in specialize and normalize methods. 
+ ⋅⋅2. Specialize returns and integer and attacks an opposing character.
+ ⋅⋅3. Some subclasses of Characters have new instance variables.
+ 
+ 
 ## How to play this game
 1. Open up your terminal.
 2. Type in ```javac YoRPG.java```
