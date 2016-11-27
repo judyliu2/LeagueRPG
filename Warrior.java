@@ -32,7 +32,6 @@ public class Warrior extends Character {
     public void normalize(){
 	strength = orig_strength;
 	defense = orig_strength;
-	System.out.println("Reset strength to " + orig_strngth + " and defense to " + orig_defense);
     }
 
     //Special attack: one massive attack, then lose stats

@@ -159,11 +159,11 @@ public class YoRPG
 		catch ( IOException e ) { }
 
 		if ( i == 2 )
-		    pat.specialize(smaug);
-		else
+		    d1 = pat.specialize(smaug);
+		else {
 		    pat.normalize();
-
-		d1 = pat.attack( smaug );
+		    d1 = pat.attack( smaug );
+		}
 
 		d2 = smaug.attack( pat );
 
