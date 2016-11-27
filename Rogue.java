@@ -39,7 +39,7 @@ public class Rogue extends Character {
     }
 
     //A rogue uses specialize it has enough mana, else it regular attacks
-    public int specialize(Character C){
+    public int specialize(Character c){
 
 	if (defense > 3){
 	    defense -= 3;
