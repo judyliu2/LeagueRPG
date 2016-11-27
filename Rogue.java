@@ -13,7 +13,7 @@ public class Rogue extends Character {
       =============================================*/
     public Rogue() {
 
-	energy = 100
+	energy = 100;
 	hp = 110;
 	orig_strength = 80;
 	orig_defense = 30;

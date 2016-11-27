@@ -164,8 +164,14 @@ public class YoRPG
 		    pat.normalize();
 
 		d1 = pat.attack( smaug );
+
 		d2 = smaug.attack( pat );
 
+		if (Math.random() > .75){
+		    d2 = smaug.specialize( pat );
+		}
+
+		
 		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
 				    " points of damage.");
 
